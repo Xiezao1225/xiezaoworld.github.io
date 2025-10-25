@@ -272,99 +272,120 @@
       </div>
      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- 项目1 - 整个卡片可点击 -->
-        <a href="https://dingzhen-vape.github.io/ClientDownloadWeb/" target="_blank" class="project-card block">
-          <div class="relative h-56 overflow-hidden">
-            <img src="https://picsum.photos/id/0/600/500" alt="WurstCN & MetorCN" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
-            <div class="absolute top-4 right-4 bg-primary text-white text-sm px-3 py-1 rounded-full">
-              歪瓜。
-            </div>
-            <!-- 悬停时显示的查看项目按钮 -->
-            <div class="project-overlay">
-              <span class="bg-white text-primary font-medium px-4 py-2 rounded-full shadow-lg">
-                查看项目 <i class="fa fa-external-link ml-1"></i>
-              </span>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold mb-2">WurstCN & MetorCN</h3>
-            <p class="text-gray-600 mb-4">
-              Farbic版本
-            </p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="text-xs bg-gray-200 px-2 py-1 rounded">WurstCN</span>
-              <span class="text-xs bg-gray-200 px-2 py-1 rounded">MetorCN</span>
-            </div>
-            <span class="text-primary font-medium flex items-center hover:underline">
-              点击查看详情 <i class="fa fa-arrow-right ml-2"></i>
-            </span>
-          </div>
-        </a>
-        
-        <!-- 项目2 - 整个卡片可点击 -->
-        <a href="https://liquidbounce.net/" target="_blank" class="project-card block">
-          <div class="relative h-56 overflow-hidden">
-            <img src="https://picsum.photos/id/0/600/400" alt="LiquidBounce" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
-            <div class="absolute top-4 right-4 bg-secondary text-white text-sm px-3 py-1 rounded-full">
-              歪瓜。
-            </div>
-            <div class="project-overlay">
-              <span class="bg-white text-primary font-medium px-4 py-2 rounded-full shadow-lg">
-                查看项目 <i class="fa fa-external-link ml-1"></i>
-              </span>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold mb-2">LiquidBounce</h3>
-            <p class="text-gray-600 mb-4">
-              水影强势绕过吉吉岛，
-              <a href="https://www.bilibili.com/video/BV1RH4y1F7vQ/?spm_id_from=333.337.search-card.all.click">
-                战绩可查
-              </a>
-            </p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="text-xs bg-gray-200 px-2 py-1 rounded">水影。</span>
-            </div>
-            <span class="text-primary font-medium flex items-center hover:underline">
-              点击查看详情 <i class="fa fa-arrow-right ml-2"></i>
-            </span>
-          </div>
-        </a>
-        
-        <!-- 项目3 - 整个卡片可点击 -->
-        <a href="https://fdpinfo.github.io/next/index.html" target="_blank" class="project-card block">
-          <div class="relative h-56 overflow-hidden">
-            <img src="https://picsum.photos/id/160/600/400" alt="FDP!" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
-            <div class="absolute top-4 right-4 bg-accent text-white text-sm px-3 py-1 rounded-full">
-              歪瓜。
-            </div>
-            <div class="project-overlay">
-              <span class="bg-white text-primary font-medium px-4 py-2 rounded-full shadow-lg">
-                查看项目 <i class="fa fa-external-link ml-1"></i>
-              </span>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold mb-2">FDP!</h3>
-            <p class="text-gray-600 mb-4">
-              现在FDP就是依托。
-            </p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="text-xs bg-gray-200 px-2 py-1 rounded">Fdp</span>
-            </div>
-            <span class="text-primary font-medium flex items-center hover:underline">
-              点击查看详情 <i class="fa fa-arrow-right ml-2"></i>
-            </span>
-          </div>
-        </a>
+        <!-- 项目卡片容器 - 增加网格间距与响应式适配 -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-8 max-w-7xl mx-auto">
+  <!-- 项目1 - 整个卡片可点击 -->
+  <a href="https://dingzhen-vape.github.io/ClientDownloadWeb/" target="_blank" class="project-card block group" 
+     style="text-decoration: none; border-radius: 16px; background: #fff; box-shadow: 0 4px 12px rgba(0,0,0,0.05); transition: all 0.3s ease; overflow: hidden;">
+    <!-- 图片区域 - 增加渐变遮罩与加载动画 -->
+    <div class="relative h-56 overflow-hidden">
+      <!-- 图片加载占位 -->
+      <div class="absolute inset-0 bg-gray-100 animate-pulse" aria-hidden="true"></div>
+      <img src="https://picsum.photos/id/0/600/500" alt="WurstCN & MetorCN" 
+           class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+           loading="lazy">
+      <!-- 标签 - 增加渐变背景 -->
+      <div class="absolute top-4 right-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white text-sm px-3 py-1 rounded-full shadow-md">
+        歪瓜。
       </div>
-      
-      <div class="text-center mt-12">
-        <a href="#" class="inline-block border-2 border-primary text-primary px-8 py-3 rounded-full hover:bg-primary hover:text-white transition-all font-medium">
-          查看更多项目
-        </a>
+      <!-- 悬停遮罩 - 优化过渡效果 -->
+      <div class="project-overlay absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+        <span class="bg-white text-blue-600 font-medium px-4 py-2 rounded-full shadow-lg transform scale-95 group-hover:scale-100 transition-transform duration-300">
+          查看项目 <i class="fa fa-external-link ml-1"></i>
+        </span>
       </div>
     </div>
-  </section>
+    <!-- 卡片内容 - 增加内边距与hover位移 -->
+    <div class="p-6 transform group-hover:translate-y-[-4px] transition-transform duration-300">
+      <h3 class="text-xl font-bold mb-2 text-gray-800 group-hover:text-blue-600 transition-colors duration-300">WurstCN & MetorCN</h3>
+      <p class="text-gray-600 mb-4 line-clamp-2">
+        Farbic版本
+      </p>
+      <!-- 标签组 - 优化颜色与圆角 -->
+      <div class="flex flex-wrap gap-2 mb-4">
+        <span class="text-xs bg-blue-50 text-blue-600 px-2 py-1 rounded-full">WurstCN</span>
+        <span class="text-xs bg-blue-50 text-blue-600 px-2 py-1 rounded-full">MetorCN</span>
+      </div>
+      <!-- 查看详情 - 增加下划线动画 -->
+      <span class="text-blue-600 font-medium flex items-center group-hover:underline relative after:content-[''] after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[1px] after:bg-blue-600 after:transition-all after:duration-300 group-hover:after:w-full">
+        点击查看详情 <i class="fa fa-arrow-right ml-2 transition-transform duration-300 group-hover:translate-x-1"></i>
+      </span>
+    </div>
+  </a>
+
+  <!-- 项目2 - 整个卡片可点击 -->
+  <a href="https://liquidbounce.net/" target="_blank" class="project-card block group" 
+     style="text-decoration: none; border-radius: 16px; background: #fff; box-shadow: 0 4px 12px rgba(0,0,0,0.05); transition: all 0.3s ease; overflow: hidden;">
+    <div class="relative h-56 overflow-hidden">
+      <div class="absolute inset-0 bg-gray-100 animate-pulse" aria-hidden="true"></div>
+      <img src="https://picsum.photos/id/1/600/400" alt="LiquidBounce" 
+           class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+           loading="lazy">
+      <div class="absolute top-4 right-4 bg-gradient-to-r from-purple-500 to-purple-600 text-white text-sm px-3 py-1 rounded-full shadow-md">
+        歪瓜。
+      </div>
+      <div class="project-overlay absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+        <span class="bg-white text-purple-600 font-medium px-4 py-2 rounded-full shadow-lg transform scale-95 group-hover:scale-100 transition-transform duration-300">
+          查看项目 <i class="fa fa-external-link ml-1"></i>
+        </span>
+      </div>
+    </div>
+    <div class="p-6 transform group-hover:translate-y-[-4px] transition-transform duration-300">
+      <h3 class="text-xl font-bold mb-2 text-gray-800 group-hover:text-purple-600 transition-colors duration-300">LiquidBounce</h3>
+      <p class="text-gray-600 mb-4 line-clamp-2">
+        水影强势绕过吉吉岛，
+        <a href="https://www.bilibili.com/video/BV1RH4y1F7vQ/?spm_id_from=333.337.search-card.all.click" 
+           class="text-purple-600 hover:underline">
+          战绩可查
+        </a>
+      </p>
+      <div class="flex flex-wrap gap-2 mb-4">
+        <span class="text-xs bg-purple-50 text-purple-600 px-2 py-1 rounded-full">水影。</span>
+      </div>
+      <span class="text-purple-600 font-medium flex items-center group-hover:underline relative after:content-[''] after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[1px] after:bg-purple-600 after:transition-all after:duration-300 group-hover:after:w-full">
+        点击查看详情 <i class="fa fa-arrow-right ml-2 transition-transform duration-300 group-hover:translate-x-1"></i>
+      </span>
+    </div>
+  </a>
+
+  <!-- 项目3 - 整个卡片可点击 -->
+  <a href="https://fdpinfo.github.io/next/index.html" target="_blank" class="project-card block group" 
+     style="text-decoration: none; border-radius: 16px; background: #fff; box-shadow: 0 4px 12px rgba(0,0,0,0.05); transition: all 0.3s ease; overflow: hidden;">
+    <div class="relative h-56 overflow-hidden">
+      <div class="absolute inset-0 bg-gray-100 animate-pulse" aria-hidden="true"></div>
+      <img src="https://picsum.photos/id/160/600/400" alt="FDP!" 
+           class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+           loading="lazy">
+      <div class="absolute top-4 right-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white text-sm px-3 py-1 rounded-full shadow-md">
+        歪瓜。
+      </div>
+      <div class="project-overlay absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+        <span class="bg-white text-orange-600 font-medium px-4 py-2 rounded-full shadow-lg transform scale-95 group-hover:scale-100 transition-transform duration-300">
+          查看项目 <i class="fa fa-external-link ml-1"></i>
+        </span>
+      </div>
+    </div>
+    <div class="p-6 transform group-hover:translate-y-[-4px] transition-transform duration-300">
+      <h3 class="text-xl font-bold mb-2 text-gray-800 group-hover:text-orange-600 transition-colors duration-300">FDP!</h3>
+      <p class="text-gray-600 mb-4 line-clamp-2">
+        现在FDP就是依托。
+      </p>
+      <div class="flex flex-wrap gap-2 mb-4">
+        <span class="text-xs bg-orange-50 text-orange-600 px-2 py-1 rounded-full">Fdp</span>
+      </div>
+      <span class="text-orange-600 font-medium flex items-center group-hover:underline relative after:content-[''] after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[1px] after:bg-orange-600 after:transition-all after:duration-300 group-hover:after:w-full">
+        点击查看详情 <i class="fa fa-arrow-right ml-2 transition-transform duration-300 group-hover:translate-x-1"></i>
+      </span>
+    </div>
+  </a>
+</div>
+
+<!-- 查看更多按钮 - 优化动画与质感 -->
+<div class="text-center mt-12 mb-16">
+  <a href="#" class="inline-block border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-full hover:bg-blue-600 hover:text-white transition-all duration-300 font-medium shadow-sm hover:shadow-md transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+    查看更多项目
+  </a>
+</div>
 
   <!-- 联系我 -->
   <section id="contact" class="py-20 px-4 bg-gradient-to-b from-transparent to-indigo-50">
